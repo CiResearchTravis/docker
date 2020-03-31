@@ -4,8 +4,9 @@ node_js:
 sudo: required
 services:
   - docker
-before_script:
-  - npm install
+#before_script:
+#  - npm install
 script:
-  - npm test
-  - docker build -t back.
+#  - npm test
+#  - docker build -t back.
+  - docker ps --all
