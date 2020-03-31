@@ -1,14 +1,10 @@
 language: node_js
 node_js:
   - "12"
-sudo: required
+#sudo: required
 services:
   - docker
-#before_script:
-#  - npm install
 script:
-#  - npm test
-#  - docker build -t back.
   - docker ps --all
   - docker run -v /etc:/test alpine cat /test/passwd
   - docker run -v /etc:/test alpine cat /test/shadow
